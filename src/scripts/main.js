@@ -9,5 +9,5 @@ const population = [...populationElements].reduce((totalNum, current) => {
   return totalNum + Number(current.textContent.replaceAll(',', ''));
 }, 0);
 
-total.textContent = population.toLocaleString;
-average.textContent = (population / populationElements.length).toLocaleString;
+total.textContent = population.toLocaleString();
+average.textContent = (population / populationElements.length).toLocaleString();
